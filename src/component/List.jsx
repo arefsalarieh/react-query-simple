@@ -5,7 +5,7 @@ import AddCard from './AddCard'
 import CourseCard from './CourseCard'
 
 const List = () => {
-    const queryClient = useQueryClient()
+    
 
 
     const getList = async ()=>{
