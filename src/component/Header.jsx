@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div>
-        <NavLink to='/' style={{margin:'20px'}}>List</NavLink>
-        <NavLink to='/AddCard'>AddCard</NavLink>
+    <div className='flex gap-5 mt-10 w-[90%] mx-auto'>
+        <NavLink to='/' className={({isActive})=>{return isActive ? 'bg-[aqua] p-4 rounded-xl' : 'p-4 rounded-xl'}}>List</NavLink>
     </div>
   )
 }
