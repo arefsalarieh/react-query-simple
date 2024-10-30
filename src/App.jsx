@@ -8,6 +8,7 @@ import Layout from './component/Layout'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AddCard from './component/AddCard'
 import Detail from './component/Detail'
+import PeopleList from './component/PeopleList'
 
 function App() {
   const client = new QueryClient({defaultOptions: {queries: {refetchOnWindowFocus: true,  cacheTime:6000, }, mutations:{}}})
@@ -21,6 +22,10 @@ function App() {
           path:'/',
           element:<List/>
         },
+        {
+          path:'/People',
+          element:<PeopleList/>
+        },        
         {
           path:'/Detail/:id',
           element:<Detail/>
